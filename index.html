@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"
+      integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+        <h1>Identificação de Objetos</h1>
+    </header>
+    <main>
+        <p>O modelo foi treinado para identificar objetos</p>
+        <label for="">Vizualização da Webcam</label>
+        <br>
+        <br>
+        <div id="camera"></div>
+        <br>
+        <div id="resultados"></div>
+        <br>
+        <button onclick="capturar()">Capturar</button>
+        <br>
+        <button onclick="verificar()">Verificar objeto</button>
+        <br>
+        <p><span id="nomeObjeto     "></span></p>
+        <br>
+        <p><span id="precisao"></span></p>
+    </main>
+    <footer></footer>
+  </body>
+</html>
